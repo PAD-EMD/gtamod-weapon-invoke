@@ -6,5 +6,5 @@ description 'Invoke a weapon'
 version '1.0.0'
 
 client_scripts {
-    'weapon_invoke.lua'
+    'client.lua'
 }

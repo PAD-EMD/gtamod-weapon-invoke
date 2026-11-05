@@ -1,15 +1,11 @@
 # GTA MOD : weapon_invoke
 
-Invoquer une arme dans la main ou l'inventaire du joueur.
-
-## Démo
-
-<video controls src="change_ped.mp4" title="Démo du mod change_ped"></video>
+Invoquer une arme dans la main du joueur, ou la retirer.
 
 ## Fonctionnalités
 
-- Changement de ped aléatoire
-- Choix manuel du modèle
+- Donne une arme (railgun par défaut, modifiable dans le script) directement équipée dans la main du joueur
+- Appuyer de nouveau retire l'arme
 
 ## Prérequis
 
@@ -17,19 +13,14 @@ Invoquer une arme dans la main ou l'inventaire du joueur.
 
 ## Installation
 
-1. Télécharge le dossier `change_ped`
-2. Copie le dossier `change_ped` dans `resources/`
-3. Ajoute `ensure change_ped` dans ton `server.cfg`
-4. Redémarre le serveur
+1. Télécharger le dossier `weapon_invoke`
+2. Copier le dossier `weapon_invoke` dans `resources/`
+3. Ajouter `ensure weapon_invoke` dans ton `server.cfg`
+4. Redémarrer le serveur
 
 ## Utilisation
 
-Commandes, touches ou événements, par exemple :
-
-```
-> changeped            -- modèle aléatoire
-> changeped <modèle>   -- modèle choisi
-```
+Appuie sur **F5** (ou tape `weapon_invoke` dans la console F8) pour donner l'arme, appuie de nouveau pour la retirer.
 
 ## Structure du dossier
 
@@ -38,10 +29,10 @@ gtamod-weapon-invoke/
 ├─ weapon_invoke/                   -- dossier du mod
 │  ├─ weapon_invoke.lua             -- script principal
 │  └─ fxmanifest.lua
-├─ weapon_invoke.mp4                -- vidéo de la démo
 └─ README.md
 ```
 
 ## Crédits
+
 Tuto et Mod réalisés par :
 Alice MASSART, PAD EMD 2026.
