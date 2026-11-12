@@ -35,4 +35,4 @@ gtamod-weapon-invoke/
 ## Crédits
 
 Tuto et Mod réalisés par :
-Alice MASSART, PAD EMD 2026.
+Armand POPOT, PAD EMD 2026.
