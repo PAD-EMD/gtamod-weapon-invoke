@@ -1,11 +1,14 @@
 # GTA MOD : weapon_invoke
 
-Invoquer une arme dans la main du joueur, ou la retirer.
+Invoque une arme dans la main du joueur, ou la retire.
 
 ## Fonctionnalités
 
-- Donne une arme (railgun par défaut, modifiable dans le script) directement équipée dans la main du joueur
+- Donne une arme (railgun par défaut, avec 100 munitions) directement équipée dans la main du joueur
 - Appuyer de nouveau retire l'arme
+- Une notification au-dessus de la minimap confirme l'action
+
+Pour changer d'arme, modifie la ligne `local WEAPON = 'WEAPON_RAILGUN'` au début de `client.lua` (par exemple `WEAPON_PISTOL`).
 
 ## Prérequis
 
@@ -13,10 +16,10 @@ Invoquer une arme dans la main du joueur, ou la retirer.
 
 ## Installation
 
-1. Télécharger le dossier `weapon_invoke`
-2. Copier le dossier `weapon_invoke` dans `resources/`
-3. Ajouter `ensure weapon_invoke` dans ton `server.cfg`
-4. Redémarrer le serveur
+1. Télécharge ce dépôt et renomme le dossier `gtamod-weapon-invoke` en `weapon_invoke`
+2. Copie le dossier `weapon_invoke` dans `resources/`
+3. Ajoute `ensure weapon_invoke` dans ton `server.cfg`
+4. Redémarre le serveur
 
 ## Utilisation
 
@@ -25,14 +28,13 @@ Appuie sur **F5** (ou tape `weapon_invoke` dans la console F8) pour donner l'arm
 ## Structure du dossier
 
 ```
-gtamod-weapon-invoke/
-├─ weapon_invoke/                   -- dossier du mod
-│  ├─ weapon_invoke.lua             -- script principal
-│  └─ fxmanifest.lua
+weapon_invoke/
+├─ client.lua           -- script principal
+├─ fxmanifest.lua
 └─ README.md
 ```
 
 ## Crédits
 
-Tuto et Mod réalisés par :
+Tuto et mod réalisés par :
 Armand POPOT, PAD EMD 2026.
